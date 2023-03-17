@@ -1,23 +1,25 @@
 /* Creating a map object and setting the view to a specific location. */
-const map = L.map("map").setView([14.184319676012597, 100.55857142487194], 5);
+const map = L.map("map", {zoomControl: false}).setView([14.184319676012597, 100.55857142487194], 5);
+
+let zoomHome = L.Control.zoomHome();
+zoomHome.addTo(map);
 
 L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-/* Creating a marker on the map. */
-// L.marker([51.5, -0.09]).addTo(map)
-//     .bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-//     .openPopup();
+
 
 function zoomPoint(lat,lon) {
-    // map.setView([lat, lon], 5);
-    map.flyTo([lat, lon], 18);
+    map.setView([lat, lon], 18);
+    // map.flyTo([lat, lon], 18);
 }
 // zoomPoint(13.184319676012597,100.55857142487194);
 
 async function getData() {
     try {
+
+        
         const res = await fetch('data.json');
         const data = await res.json();
         const dataTable = data.data;
@@ -30,23 +32,34 @@ async function getData() {
         for (let index = 0; index < dataTable.length; index++) {
             const dataRow = dataTable[index];
 
-            L.marker([dataRow.LAT, dataRow.LON]).addTo(map)
-    .bindPopup(`${dataRow.texts} 🏖️`);
+            let imgIcon = L.icon({
+                iconUrl: `/img/${dataRow.IMG}`,
+                iconSize:     [60, 30], // size of the icon
+                popupAnchor:  [0, -15] // point from which the popup should open relative to the iconAnchor
+            });
+
+            
+
+            L.marker([dataRow.LAT, dataRow.LON], {icon: imgIcon}).addTo(map)
+    .bindPopup(`<center>${dataRow.texts} 🏖️ <br><br> <img class="myImages" id="myImg" src="/img/${dataRow.IMG}" style="height: 95%; max-width: 100%;"> </center>`);
     // .openPopup();
 // 
         
         rowContent += `
         <tr>
         <td><span class="badge badge-warning">${index+1}</span></td>
+        <td><button type="button" class="btn btn-info" onclick="zoomPoint(${dataRow.LAT},${dataRow.LON})">Zoom</button></td>
+        <td><img class="myImages" id="myImg" src="/img/${dataRow.IMG}" alt="${dataRow.texts}" style="height: 35px;"></td>
         <td>${dataRow.texts}</td>
         <td>${dataRow.LON}</td>
         <td>${dataRow.LAT}</td>
-        <td><button type="button" class="btn btn-info" onclick="zoomPoint(${dataRow.LAT},${dataRow.LON})">Zoom</button></td>
+       
         </tr>
     `;
 
         }
-
+   
+    
         //   console.log('rowContent =', rowContent);
         return rowContent;
     } catch (error) {
@@ -60,14 +73,33 @@ function cerateTable() {
     getData().then((rowContent) => {
 
         $(document).ready(function () {
-            // $("#example").DataTable({
-            //     "responsive": true,
-            //     // "lengthChange": false,
-            //     // "autoWidth": true,
-            // });
+
+            let modal = document.getElementById('myModal');
+            let images = document.getElementsByClassName('myImages');
+            let modalImg = document.getElementById("img01");
+            let captionText = document.getElementById("caption");
+
+            for (let i = 0; i < images.length; i++) {
+            let img = images[i];
+            img.onclick = function(evt) {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+            }
+
+            let span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+    
             $('#example').DataTable({
                 // "lengthChange": true,
                 // "searching": false,
+                "pageLength" : 6,
+                "lengthMenu": [[6, 12, -1], [6, 12, 'Todos']],
                 "ordering": true,
                 // "info": true,
                 "autoWidth": true,
@@ -80,10 +112,12 @@ function cerateTable() {
                       <thead>
                           <tr>
                                 <th>ID</th>
-                              <th>Name TH</th>
+                                <th>Manage</th>
+                                <th>Image</th>
+                              <th>Name</th>
                               <th>Latitude</th>
                               <th>Longitude</th>
-                              <th>Manage</th>
+                              
                           </tr>
                       </thead>
                       <tbody>
@@ -96,6 +130,8 @@ function cerateTable() {
 }
 
 cerateTable();
+
+
 
 
 
