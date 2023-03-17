@@ -1,21 +1,21 @@
-{"data":[{
-    "texts":"🏖️ หาดกะรนน้อย จังหวัดภูเก็ต","texts_en":"Karon Noi Beach Karon, Mueang Phuket, Phuket 83100","LAT":7.86437,"LON":98.28206},
-    {"texts":"🏖️ หาดชะอำ จังหวัดเพชรบุรี","texts_en":"Cha-am Beach Cha-Am, Cha-Am, Phetchaburi 76120","LAT":12.758088,"LON":99.972629},
-    {"texts":"🏖️ หาดสัตหีบ  จังหวัดชลบุรี","texts_en":"Sattahip Beach Sattahip, Sattahip, Chon Buri 20180","LAT":12.65721,"LON":100.91747},
-    {"texts":"🏖️ หาดบางแสน  จังหวัดชลบุรี","texts_en":"Bang Saen Beach Saen Suk, Mueang Chon Buri, Chon Buri 20000","LAT":13.28411,"LON":100.91337}
-    ,{"texts":"🏖️ หาดจอมเทียน จังหวัดชลบุรี","texts_en":"Jomtian Beach Pattaya, Bang Lamung, Chon Buri 20150","LAT":12.891515,"LON":100.872828}
-    ,{"texts":"🏖️ หาดวงพระจันทร์ จังหวัดชลบุรี","texts_en":"Wong Phrachan Beach Na Kluea, Bang Lamung, Chon Buri 20150","LAT":12.95806,"LON":100.884216}
-    ,{"texts":"🏖️ หาดแหลมกุ่ม จังหวัดประจวบคีรีขันธ์ ","texts_en":"Laem Kum Beach Na Hu Kwang, Thap Sakae, Prachuap Khiri Khan 77130","LAT":11.468903,"LON":99.623367}
-    ,{"texts":"🏖️ หาดบางเสร่ จังหวัดชลบุรี","texts_en":"Bang Sare Beach Bang Sare, Sattahip, Chon Buri 20250","LAT":12.770136,"LON":100.897126}
-    ,{"texts":"🏖️ หาดยวน จังหวัดสุราษฎร์ธานี ","texts_en":"Yuan Beach Ban Tai, Ko Pha-Ngan, Surat Thani 84280","LAT":9.691113,"LON":100.073775}
-    ,{"texts":"🏖️ หาดเทียน จังหวัดสุราษฎร์ธานี","texts_en":"Thian Beach Ban Tai, Ko Pha-Ngan, Surat Thani 84280","LAT":9.696012,"LON":100.077298}
-    ,{"texts":"🏖️ หาดน้ำตก จังหวัดสุราษฎร์ธานี","texts_en":"Nam Tok Beach Ban Tai, Ko Pha-Ngan, Surat Thani 84280","LAT":9.72968,"LON":100.077566}
-    ,{"texts":"🏖️ หาดแฆแฆ จังหวัดปัตตานี","texts_en":"Khae Khae Beach Ban Nam Bo, Panare, Pattani 94130","LAT":6.845718,"LON":101.5535}
-    ,{"texts":"🏖️ หาดจอมเทียน จังหวัดชลบุรี","texts_en":"Jomtian Beach Pattaya, Bang Lamung, Chon Buri 20150","LAT":12.89948,"LON":100.86592}
-    ,{"texts":"🏖️ หาดดงตาล จังหวัดชลบุรี","texts_en":"Dong Tan Beach Pattaya, Bang Lamung, Chon Buri 20150","LAT":12.90445,"LON":100.860263}
-    ,{"texts":"🏖️ หาดพัทยา จังหวัดชลบุรี","texts_en":"Pattaya Beach Pattaya, Bang Lamung, Chon Buri 20150","LAT":12.937227,"LON":100.881716}
-    ,{"texts":"🏖️ หาดราไวย์ จังหวัดภูเก็ต","texts_en":"Rawai Beach Rawai, Mueang Phuket, Phuket 83000","LAT":7.77223,"LON":98.32263}
-    ,{"texts":"🏖️ หาดในหาน จังหวัดภูเก็ต","texts_en":"Nai Han Beach Rawai, Mueang Phuket, Phuket 83000","LAT":7.77596,"LON":98.30534}
-    ,{"texts":"🏖️ หาดเทียนทะเล จังหวัดชลบุรี","texts_en":"Thian Thalay Beach Sattahip, Sattahip, Chon Buri 20180","LAT":12.63994,"LON":100.92651}
-    ,{"texts":"🏖️ หาดวนกร จังหวัดประจวบคีรีขันธ์","texts_en":"Wana Korn Beach Huai Yang, Thap Sakae, Prachuap Khiri Khan 77130","LAT":11.636334,"LON":99.703124},
-    {"texts":"🏖️ หาดเจ้าสำราญ จังหวัดเพชรบุรี ","texts_en":"Chao Samran Beach Hat Chao Samran, Mueang Phetchaburi, Phetchaburi 76100","LAT":13.005267,"LON":100.065305}]}
+{"data":[
+    {"texts":"🏖️ หาดกะรนน้อย จังหวัดภูเก็ต","texts_en":"Karon Noi Beach Karon, Mueang Phuket, Phuket 83100","LAT":7.86437,"LON":98.28206,"IMG":"1.jpg"},
+    {"texts":"🏖️ หาดชะอำ จังหวัดเพชรบุรี","texts_en":"Cha-am Beach Cha-Am, Cha-Am, Phetchaburi 76120","LAT":12.758088,"LON":99.972629,"IMG":"2.jpg"},
+    {"texts":"🏖️ หาดสัตหีบ  จังหวัดชลบุรี","texts_en":"Sattahip Beach Sattahip, Sattahip, Chon Buri 20180","LAT":12.65721,"LON":100.91747,"IMG":"3.jpg"},
+    {"texts":"🏖️ หาดบางแสน  จังหวัดชลบุรี","texts_en":"Bang Saen Beach Saen Suk, Mueang Chon Buri, Chon Buri 20000","LAT":13.28411,"LON":100.91337,"IMG":"4.jpg"}
+    ,{"texts":"🏖️ หาดจอมเทียน จังหวัดชลบุรี","texts_en":"Jomtian Beach Pattaya, Bang Lamung, Chon Buri 20150","LAT":12.891515,"LON":100.872828,"IMG":"5.jpg"}
+    ,{"texts":"🏖️ หาดวงพระจันทร์ จังหวัดชลบุรี","texts_en":"Wong Phrachan Beach Na Kluea, Bang Lamung, Chon Buri 20150","LAT":12.95806,"LON":100.884216,"IMG":"6.jpg"}
+    ,{"texts":"🏖️ หาดแหลมกุ่ม จังหวัดประจวบคีรีขันธ์ ","texts_en":"Laem Kum Beach Na Hu Kwang, Thap Sakae, Prachuap Khiri Khan 77130","LAT":11.468903,"LON":99.623367,"IMG":"7.jpg"}
+    ,{"texts":"🏖️ หาดบางเสร่ จังหวัดชลบุรี","texts_en":"Bang Sare Beach Bang Sare, Sattahip, Chon Buri 20250","LAT":12.770136,"LON":100.897126,"IMG":"8.jpg"}
+    ,{"texts":"🏖️ หาดยวน จังหวัดสุราษฎร์ธานี ","texts_en":"Yuan Beach Ban Tai, Ko Pha-Ngan, Surat Thani 84280","LAT":9.691113,"LON":100.073775,"IMG":"9.jpg"}
+    ,{"texts":"🏖️ หาดเทียน จังหวัดสุราษฎร์ธานี","texts_en":"Thian Beach Ban Tai, Ko Pha-Ngan, Surat Thani 84280","LAT":9.696012,"LON":100.077298,"IMG":"10.jpg"}
+    ,{"texts":"🏖️ หาดน้ำตก จังหวัดสุราษฎร์ธานี","texts_en":"Nam Tok Beach Ban Tai, Ko Pha-Ngan, Surat Thani 84280","LAT":9.72968,"LON":100.077566,"IMG":"11.jpg"}
+    ,{"texts":"🏖️ หาดแฆแฆ จังหวัดปัตตานี","texts_en":"Khae Khae Beach Ban Nam Bo, Panare, Pattani 94130","LAT":6.845718,"LON":101.5535,"IMG":"12.jpg"}
+    ,{"texts":"🏖️ หาดดงตาล จังหวัดชลบุรี","texts_en":"Dong Tan Beach Pattaya, Bang Lamung, Chon Buri 20150","LAT":12.90445,"LON":100.860263,"IMG":"13.jpg"}
+    ,{"texts":"🏖️ หาดพัทยา จังหวัดชลบุรี","texts_en":"Pattaya Beach Pattaya, Bang Lamung, Chon Buri 20150","LAT":12.937227,"LON":100.881716,"IMG":"14.jpg"}
+    ,{"texts":"🏖️ หาดราไวย์ จังหวัดภูเก็ต","texts_en":"Rawai Beach Rawai, Mueang Phuket, Phuket 83000","LAT":7.77223,"LON":98.32263,"IMG":"15.jpg"}
+    ,{"texts":"🏖️ หาดในหาน จังหวัดภูเก็ต","texts_en":"Nai Han Beach Rawai, Mueang Phuket, Phuket 83000","LAT":7.77596,"LON":98.30534,"IMG":"16.jpg"}
+    ,{"texts":"🏖️ หาดเทียนทะเล จังหวัดชลบุรี","texts_en":"Thian Thalay Beach Sattahip, Sattahip, Chon Buri 20180","LAT":12.63994,"LON":100.92651,"IMG":"17.jpg"}
+    ,{"texts":"🏖️ หาดวนกร จังหวัดประจวบคีรีขันธ์","texts_en":"Wana Korn Beach Huai Yang, Thap Sakae, Prachuap Khiri Khan 77130","LAT":11.636334,"LON":99.703124,"IMG":"18.jpg"},
+    {"texts":"🏖️ หาดเจ้าสำราญ จังหวัดเพชรบุรี ","texts_en":"Chao Samran Beach Hat Chao Samran, Mueang Phetchaburi, Phetchaburi 76100","LAT":13.005267,"LON":100.065305,"IMG":"19.jpg"}
+]}
