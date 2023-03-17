@@ -40,18 +40,23 @@
 <!-- leaflet.js -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="/dist/leaflet.zoomhome.css"/>
+<script src="/dist/leaflet.zoomhome.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
+
+
 
 </head>
 <body>
     <div class="jumbotron text-center" style="margin-bottom:0 ; color: black;">
-        <h1>My First Bootstrap Page</h1>
-        <p>Resize this responsive page to see the effect!</p>
+        <h1>เที่ยวทั่วหาด</h1>
+        <p>ระบบแนะนำสถานที่ท่องเที่ยวประเภทหาดน่าเที่ยวในประเทศไทย</p>
       </div>
       
       <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <a class="navbar-brand" href="#">Navbar</a> <img src="popeye.png" alt="PopEye" style="height: 50px;">
+         <img class="myImages" id="myImg" src="popeye.png" alt="PopEye" style="height: 50px;"><a class="navbar-brand" href="#">&nbsp;PopEyeDev</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -84,6 +89,14 @@
             <div id="map" ></div> 
           </div>
         </div>
+      </div>
+
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
       </div>
 
           
