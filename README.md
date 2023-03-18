@@ -14,7 +14,7 @@
 ## Features
 
 - Tables Display : Beach information table, Zoom to location the beach
-- Map : Display The points show location beaches, Layers BaseMap, Tools ZoomIn, ZoomOut, ZoomToHome
+- Map : Display the points show location beaches, Layers BaseMap, Tools ZoomIn, ZoomOut, ZoomToHome
 
 
 
