@@ -104,3 +104,7 @@ html, body {
     }
   }
 
+  .bg-dark {
+    background-color: #0c2e46!important;
+}
+
