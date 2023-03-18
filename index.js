@@ -36,7 +36,6 @@ function zoomPoint(lat,lon) {
     map.setView([lat, lon], 18);
     // map.flyTo([lat, lon], 18);
 }
-// zoomPoint(13.184319676012597,100.55857142487194);
 
 async function getData() {
     try {
