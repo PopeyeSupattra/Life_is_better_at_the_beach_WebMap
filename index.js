@@ -1,14 +1,36 @@
+
+
+
+let mapDark = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+});
+
+const mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>';
+const mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+const streets = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+});
 /* Creating a map object and setting the view to a specific location. */
-const map = L.map("map", {zoomControl: false}).setView([14.184319676012597, 100.55857142487194], 5);
+const map = L.map("map", {zoomControl: false ,
+    layers: [mapDark]}).setView([14.184319676012597, 100.55857142487194], 5);
+
+    var baseMaps = {
+        "OpenStreetMapDark": mapDark,
+        "OpenStreetMap": osm,
+        "Mapbox Streets": streets
+    };
+    var layerControl = L.control.layers(baseMaps).addTo(map);
+
+
+    const satellite = L.tileLayer(mbUrl, {id: 'mapbox/satellite-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+	layerControl.addBaseLayer(satellite, 'Satellite');
 
 let zoomHome = L.Control.zoomHome();
 zoomHome.addTo(map);
-
-L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
-
 
 function zoomPoint(lat,lon) {
     map.setView([lat, lon], 18);
